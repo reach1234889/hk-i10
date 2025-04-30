@@ -20,15 +20,7 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-# Verify the key
-CORRECT_KEY="10"
-read -p "Enter the setup key to proceed: " USER_KEY
-
-if [[ "$USER_KEY" != "$CORRECT_KEY" ]]; then
-    echo "Invalid key. Access denied."
-    exit 1
-fi
-echo "Key verified successfully. Proceeding with setup..."
+echo "Proceeding with setup..."
 
 # Clone the repository
 REPO_URL="https://github.com/Gamerzhacker/hk-i10.git"
